@@ -8,15 +8,15 @@ When you are done with the test, please send a link to your repo to your recruit
 
 For this test assignment, you will have to create your own simple state management library like Redux or MobX to handle events and store data across the application.
 
-1. You should store your library code in the `/lib` folder of this repository.
-2. You are free to use any architecture pattern for designing your library. It can be **Flux**, **Redux**, **BloC**, etc.
-3. Your library should be integrated with a simple example app in `src` folder.
-    1. You should create a form component for creating a new incident
-    2. When an incident is created, an action must be dispatched notifying the rest of the app that a new incident is created
-    3. Home page should get a list of incident from your library's store instead of hardcoded values
-4. You should bring some essential styling to the app (currently it has no styling at all).
-    1. You can use any styling framework you want.
-    2. The information should be displayed appropriately on devices of all sizes
+- [x] You should store your library code in the `/lib` folder of this repository.
+- [x] You are free to use any architecture pattern for designing your library. It can be **Flux**, **Redux**, **BloC**, etc.
+- [x] Your library should be integrated with a simple example app in `src` folder.
+    - [x] You should create a form component for creating a new incident
+    - [x] When an incident is created, an action must be dispatched notifying the rest of the app that a new incident is created
+    - [x] Home page should get a list of incident from your library's store instead of hardcoded values
+- [x] You should bring some essential styling to the app (currently it has no styling at all).
+    - [x] You can use any styling framework you want.
+    - [] The information should be displayed appropriately on devices of all sizes
 
 ## Evaluation
 

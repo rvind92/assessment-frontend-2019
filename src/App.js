@@ -1,17 +1,33 @@
 import React                              from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { CreateIncident }                 from './pages/CreateIncident'
-import { Home }                           from './pages/Home'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import CreateIncident                 from './pages/CreateIncident'
+import Home                           from './pages/Home'
 import { Header }                         from './components/Header'
+import { StateConsumer } from 'new-redux/stateContext'
 
-function App () {
+const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className='App'>
         <Header/>
         <div>
-          <Route exact path="/" component={ Home }/>
-          <Route path="/create" component={ CreateIncident }/>
+          <Switch>
+            <Route exact path='/home' render={() => (
+              <StateConsumer>
+                {({ state, dispatch }) => {
+                  return (
+                    <Home state={state} dispatch={dispatch} />
+                  )
+                }}
+              </StateConsumer>
+            )}/>
+            <Route path='/create'  render={() => (
+              <StateConsumer>
+                {({ state, dispatch }) => <CreateIncident state={state} dispatch={dispatch} />}
+              </StateConsumer>
+            )}/>
+            <Route render={() => <Redirect to='/home' />} />
+          </Switch>
         </div>
       </div>
     </Router>
