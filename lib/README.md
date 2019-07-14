@@ -6,6 +6,8 @@ Use this file to outline the methods you expose from your library along with the
 
 This library is a simple implementation of a Redux-like state management system. It is built utilising the React Context API.
 
+Please refer to the new-redux folder in the root directory for the non-transpiled version of the code.
+
 ## Implementation/Setup
 
 1. At the entry point of your app (index.js for example), import the StateProvider component from the `new-redux` and your reducer function to your file:
