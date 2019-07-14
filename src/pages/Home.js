@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Incident from '../components/Incident'
 import Filter from '../components/Filter'
-import { getIncidents, getUsers } from 'new-redux/actions'
+import { getIncidents, getUsers } from '../actions'
 import _ from 'lodash'
 
 export default class Home extends Component {

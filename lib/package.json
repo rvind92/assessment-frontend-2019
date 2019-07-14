@@ -1,8 +1,8 @@
 {
-  "name": "lib",
+  "name": "new-redux",
   "version": "1.0.0",
-  "description": "Use this file to outline the methods you expose from your library along with their example usages and the explanations of what each of the methods does.",
-  "main": "index.js",
+  "description": "",
+  "main": "stateContext.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

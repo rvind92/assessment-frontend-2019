@@ -1,5 +1,5 @@
 import React from 'react'
-import { acknowledgeIncident, assignIncident, resolveIncident, deleteIncident } from 'new-redux/actions'
+import { acknowledgeIncident, assignIncident, resolveIncident, deleteIncident } from '../actions'
 
 const incidentStyle = (status) => {
   return {

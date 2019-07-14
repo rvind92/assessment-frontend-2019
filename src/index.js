@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import App from './App';
 import { StateProvider } from 'new-redux/stateContext'
-import { reducer } from 'new-redux/reducers/index'
+import { reducer } from './reducers/index'
 
 const initialState = {
   incidents: [],

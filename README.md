@@ -16,7 +16,7 @@ For this test assignment, you will have to create your own simple state manageme
     - [x] Home page should get a list of incident from your library's store instead of hardcoded values
 - [x] You should bring some essential styling to the app (currently it has no styling at all).
     - [x] You can use any styling framework you want.
-    - [] The information should be displayed appropriately on devices of all sizes
+    - [x] The information should be displayed appropriately on devices of all sizes
 
 ## Evaluation
 

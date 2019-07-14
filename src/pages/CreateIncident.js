@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import { createIncident, getUsers } from 'new-redux/actions'
+import { createIncident, getUsers } from '../actions'
 
 class CreateIncident extends Component {
   state = {
